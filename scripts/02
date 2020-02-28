@@ -1,0 +1,9 @@
+#!bin/bash
+if [ $1 ]
+    then
+        echo "Deleting user $1."
+        pkill -u $1
+        sudo userdel -r $1
+else
+    echo "Usage: sh 02 [username]."
+fi

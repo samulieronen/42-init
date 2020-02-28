@@ -1,0 +1,15 @@
+#!/bin/bash
+echo '\nUsername'
+whoami
+echo 'Your IP addr:'
+ip a | grep lo | grep -m1 inet | awk '{print $2}' | grep -Po '.*(?=..$)'
+echo '\nYur debian version:'
+cat /etc/debian_version
+echo '\nSSH Status:'
+systemctl status ssh
+echo '\nPackages needing update:'
+sudo apt-get update
+echo '\nLast reboot:'
+who -b
+echo 'Here, try to learn new stuff!'
+open -a "Google Chrome" http://wikipedia.com

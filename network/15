@@ -1,0 +1,4 @@
+!Sudo needed!
+go to /etc/hosts
+change cdn.intra.42.fr IP to 46.19.122.85
+save changes and restart machine

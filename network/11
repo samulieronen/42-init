@@ -1,0 +1,2 @@
+run traceroute slash16.org -w 1 (for 1sec wait if no response to make things faster)
+Line 2, NAT links to the outer world
